@@ -1,0 +1,11 @@
+{
+  "name": "TheQueensDeadBruh",
+  "version_number": "1.1.1",
+  "website_url": "https://github.com/Vapok/TheQueensDeadBruh",
+  "description": "God Save The Queen! Wait! No, Kill her so we get rid of this MIST!! Um.. Dude? The Queens Dead Bruh!",
+  "dependencies": [
+    "denikson-BepInExPack_Valheim-5.4.2333",
+    "ValheimModding-Jotunn-2.26.1",
+    "ValheimModding-YamlDotNet-16.3.1"
+  ]
+}
