@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using BepInEx.Configuration;
 using HarmonyLib;
 using TheQueensDeadBruh.Configuration;
@@ -37,7 +37,7 @@ public class DisableMistlandsMistComponent
     {
         private static void Prefix(ref EnvMan __instance, ref EnvSetup env)
         {
-            if (EnableQueensDeadBruh.Value && MistlandsTransparencyAmount.Value.Equals(0f))
+            if (EnableQueensDeadBruh.Value && MistlandsTransparencyAmount.Value <= 0.0001f)
             {
                 if (ZoneSystem.instance == null || EnvMan.instance == null) return;
 

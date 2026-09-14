@@ -1,5 +1,12 @@
 # TheQueensDeadBruh! Changelog
 
+### 1.1.2 - Valheim & Dependency Maintenance
+* Updated to Valheim 0.221.12 references.
+* Updated Vapok.Valheim.Common to 2.11.22112.
+* Updated Jotunn to 2.27.1.
+* Updated YamlDotNet to 16.3.1.
+* Fixed: Mistlands “off” check now uses an epsilon comparison instead of exact float equality for config-driven transparency.
+
 ### 1.1.1 - Updated Dependencies
 * Updating with latest dependencies.
 
