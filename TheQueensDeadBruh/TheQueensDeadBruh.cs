@@ -24,7 +24,7 @@ namespace TheQueensDeadBruh
         //Module Constants
         private const string _pluginId = "vapok.mods.thequeensdeadbruh";
         private const string _displayName = "The Queens Dead Bruh!";
-        private const string _version = "1.1.2";
+        private const string _version = "2.0.0";
         
         //Interface Properties
         public string PluginId => _pluginId;
@@ -77,12 +77,6 @@ namespace TheQueensDeadBruh
             //???
 
             //Profit
-        }
-        
-        private void Update()
-        {
-            if (!Player.m_localPlayer || !ZNetScene.instance)
-                return;
         }
 
         public void InitializeModule(object send, EventArgs args)
