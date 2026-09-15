@@ -1,34 +1,33 @@
-# The Queen's Dead Bruh! Patchnotes
-
-## 2.0.0 - Valheim 1.0 Release
-* Updated for Valheim 1.0 (1.0.12).
-* Updated Vapok.Valheim.Common to 3.2.1012.
-* Updated Jotunn to 2.30.0.
-* Updated YamlDotNet to 17.0.0.
-* Performance & Optimization: Eliminated per-frame scene traversal and `GameObject.Find` calls during environment updates.
-* Performance & Optimization: Optimized particle mist renderer material color updates.
-* Code cleanup and removal of unused frame callbacks.
+# 2.0.1 - Dependency & Compatibility Maintenance
+* **Dependency Updates**: Updated Jotunn and BepInEx runtime package bindings.
+* **Compatibility Maintenance**: Verified compatibility against the latest Valheim 1.0 release.
+* **Documentation Improvements**: Standardized README, user guides, and technical patch documentation.
 
 <details>
-<summary><b>Changelog History</b> (<i>click to expand</i>)</summary>
+<summary><b>2.0 Changelog History (Valheim Release)</b> (<i>click to expand</i>)</summary>
 
-## 1.1.2 - Valheim & Dependency Maintenance
-* Updated to Valheim 0.221.12 references.
-* Updated Vapok.Valheim.Common to 2.11.22112.
-* Updated Jotunn to 2.27.1.
-* Updated YamlDotNet to 16.3.1.
-* Fixed: Mistlands “off” check now uses an epsilon comparison instead of exact float equality for config-driven transparency.
+### 2.0.0 - Valheim 1.0 Release & Performance Optimization
+* **Valheim 1.0 Compatibility**: Updated for Valheim 1.0 (`1.0.12`), Jotunn 2.30.0, and `Vapok.Valheim.Common` 3.2.1012.
+* **Performance Optimizations**: Completely eliminated per-frame scene searching and optimized particle mist material updates.
+* **World Progression Tracking**: Streamlined Queen boss defeat detection and server synchronization.
 
-## 1.1.1 - Updated Dependencies
-* Updating with latest dependencies.
+</details>
 
-## 1.1.0 - Modifiable Mist Parameters
-* With a nod to OrianaVenture's MutedMist Mod, you can now programmatically set Mistland's Mist from completely off, completely on, or somewhere in between.
-  * Settings are syncable for dedicated servers.
+<details>
+<summary><b>1.0 Changelog History (Valheim Early Access)</b> (<i>click to expand</i>)</summary>
 
-## 1.0.0 - The Queen's Dead Bruh! Initial Release
-* Small mod that when used, will disable the Mistland's Mist that covers the lands once the Queen is killed for the first time on a world.
-  * Dude.. The Queen's Dead Bruh!
-* This mod allows for dedicated server configurations to sync whether it is enabled or disabled to clients.
+### 1.1.2 - Valheim 0.221.12 Maintenance & Epsilon Fix
+* Updated to Valheim 0.221.12, `Vapok.Valheim.Common` 2.11.22112, and Jotunn 2.27.1.
+* Fixed Mistlands "off" state comparison to use float epsilon tolerance for configuration transparency handling.
+
+### 1.1.1 - Dependency Maintenance
+* Updated runtime dependencies.
+
+### 1.1.0 - Modifiable Mist Parameters
+* Added configurable mist density settings allowing players and server admins to adjust Mistlands mist density from 0% to 100%.
+* Added dedicated server configuration synchronization via ServerSync.
+
+### 1.0.0 - Initial Release of The Queen's Dead Bruh!
+* Initial release of automatic Mistlands mist clearing upon defeating The Queen boss on a world.
 
 </details>
