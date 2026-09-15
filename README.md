@@ -62,9 +62,11 @@ Configure via the in-game [BepInEx Configuration Manager](https://github.com/Bep
 
 <div align="center">
 
-🇺🇸 **English** • 🇩🇪 **German** • 🇫🇷 **French** • 🇪🇸 **Spanish** • 🇨🇳 **Chinese** • 🇷🇺 **Russian**
+🇺🇸 **English** (Default)
 
 </div>
+
+*Want to help translate The Queen's Dead Bruh? Community translations are welcome! Please submit a PR on [GitHub](https://github.com/Vapok/TheQueensDeadBruh) or stop by our [Discord](https://discord.gg/5YAJkRFBXt).*
 
 ---
 
