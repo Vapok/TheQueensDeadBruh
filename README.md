@@ -23,7 +23,7 @@ You braved the infested mines, climbed the ancient citadel, and drove your blade
 
 <br>
 
-[![Survival Servers](https://raw.githubusercontent.com/Vapok/TheQueensDeadBruh/refs/heads/main/images/survivalservers_banner.png)](https://www.survivalservers.com/services/game_servers/valheim/?ref=vapok)
+[![Survival Servers](https://raw.githubusercontent.com/Vapok/TheQueensDeadBruh/main/images/survivalservers_banner.png)](https://www.survivalservers.com/services/game_servers/valheim/?ref=vapok)
 
 </div>
 
