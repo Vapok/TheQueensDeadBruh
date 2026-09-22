@@ -1,19 +1,23 @@
-﻿using HarmonyLib;
+using HarmonyLib;
+using Jotunn.Managers;
+using TheQueensDeadBruh.Features;
 
 namespace TheQueensDeadBruh.Patches;
 
-public class FejdStartupPatches
+internal static class FejdStartupPatches
 {
-
     [HarmonyPatch(typeof(FejdStartup), nameof(FejdStartup.Awake))]
     [HarmonyAfter("org.bepinex.helpers.LocalizationManager")]
     [HarmonyBefore("org.bepinex.helpers.ItemManager")]
-    public static class FejdStartupAwakePatch
+    private static class FejdStartupAwakePatch
     {
-        static void Prefix()
+        [HarmonyPrepare]
+        private static bool Prepare() => !GUIManager.IsHeadless();
+
+        private static void Prefix()
         {
             TheQueensDeadBruh.Waiter.ValheimIsAwake(true);
+            DisableMistlandsMistComponent.Reset();
         }
     }
-
 }

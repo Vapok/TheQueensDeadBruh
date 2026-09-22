@@ -1,7 +1,14 @@
-# 2.0.8 - Dedicated Server Bypass & Stability Updates
-* **Dedicated Server Bypass**:
-  * In `TheQueensDeadBruh.cs`, added early exit when `SystemInfo.graphicsDeviceType == GraphicsDeviceType.Null`, bypassing visual mist hooks on headless dedicated servers.
-  * In `DisableMistlandsMistComponent.cs`, replaced lazy `var` with explicit types (`ParticleSystemRenderer`, `Color`).
+# 2.0.8 - Performance Optimization, Dedicated Server Bypass & Stability
+* **Performance Optimization**:
+  * In `DisableMistlandsMistComponent.cs`, implemented throttled caching for `IsQueenDead()` (2.0s check interval) instead of querying `ZoneSystem.instance.GetGlobalKey("defeated_queen")` every rendered frame.
+  * Cached `ParticleSystemRenderer`, `Material`, and `ParticleSystem` references to eliminate per-frame `GetComponent<ParticleSystemRenderer>()` calls and avoid runtime material clone churn.
+  * Implemented `[HarmonyPrefix]` on `ParticleMist.Update` that clears active particles and short-circuits the update loop when `MistlandsTransparencyAmount <= 0.0001f` and the Queen is defeated, bypassing CPU demister calculations when mist is disabled.
+  * Added `SettingChanged` event subscriptions on `EnableQueensDeadBruh` and `MistlandsTransparencyAmount` to immediately apply transparency and re-enable `ParticleMist` if settings are changed in-game.
+  * Added `DisableMistlandsMistComponent.Reset()` hook on `FejdStartup.Awake` and plugin `OnDestroy` to clean up cached references across game sessions.
+* **Dedicated Server Safeguards**:
+  * In `TheQueensDeadBruh.cs`, standardized headless detection using `GUIManager.IsHeadless()`, bypassing visual mist hooks on headless dedicated servers.
+  * Added `[HarmonyPrepare]` on patch classes returning `!GUIManager.IsHeadless()`.
+  * Enforced explicit typing across all patched routines.
 * **Library Updates**:
   * Synchronized `Vapok.Valheim.Common` to `3.17.1015` (resolving [THEQUEENSDEADBRUH-3](https://vapok-gaming.sentry.io/issues/THEQUEENSDEADBRUH-3)).
   * Synchronized `JotunnLib` to `2.30.2`.

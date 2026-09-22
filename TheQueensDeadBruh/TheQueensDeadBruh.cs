@@ -1,10 +1,10 @@
-/* NoFogBruh by Vapok */
-
 using System;
 using System.Reflection;
 using BepInEx;
 using HarmonyLib;
 using JetBrains.Annotations;
+using Jotunn.Entities;
+using Jotunn.Managers;
 using Jotunn.Utils;
 using UnityEngine;
 using TheQueensDeadBruh.Configuration;
@@ -55,7 +55,7 @@ namespace TheQueensDeadBruh
             //Register Logger
             LogManager.Init(PluginId,out _log);
 
-            if (SystemInfo.graphicsDeviceType == UnityEngine.Rendering.GraphicsDeviceType.Null)
+            if (GUIManager.IsHeadless())
             {
                 _log.Info("Headless dedicated server detected. TheQueensDeadBruh disabled.");
                 return;
@@ -65,7 +65,7 @@ namespace TheQueensDeadBruh
             Waiter = new Waiting();
             
             //Jotunn Localization
-            var localization = Jotunn.Managers.LocalizationManager.Instance.GetLocalization();
+            CustomLocalization localization = Jotunn.Managers.LocalizationManager.Instance.GetLocalization();
             
             //Initialize Managers
             Localizer.Init(localization);
@@ -106,6 +106,7 @@ namespace TheQueensDeadBruh
         
         private void OnDestroy()
         {
+            DisableMistlandsMistComponent.Reset();
             _instance = null;
         }
 

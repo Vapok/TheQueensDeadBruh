@@ -1,6 +1,7 @@
-# 2.0.8 - Dedicated Server Bypass & Stability Updates
-* Disabled visual mist adjustments on headless dedicated servers to save performance.
-* Updated Jotunn to 2.30.2 and internal dependencies for stability.
+# 2.0.8 - Performance Optimization, Dedicated Server Bypass & Stability
+* **Performance Optimization**: Optimized mist rendering updates and cached boss defeat checks to eliminate frame rate drops.
+* **Dedicated Server Bypass**: Disabled visual mist adjustments on headless dedicated servers to save server performance.
+* **Dependency Updates**: Updated Jotunn to 2.30.2 and internal dependencies for stability.
 
 <details>
 <summary><b>2.0 Changelog History (Valheim Release)</b> (<i>click to expand</i>)</summary>
