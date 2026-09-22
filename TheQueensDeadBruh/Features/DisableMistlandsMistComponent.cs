@@ -62,10 +62,10 @@ public class DisableMistlandsMistComponent
             if (!IsQueenDead())
                 return;
 
-            var mist = __instance.GetComponent<ParticleSystemRenderer>();
+            ParticleSystemRenderer mist = __instance.GetComponent<ParticleSystemRenderer>();
             if (mist != null && mist.material != null)
             {
-                var color = mist.material.color;
+                Color color = mist.material.color;
                 if (!Mathf.Approximately(color.a, MistlandsTransparencyAmount.Value))
                 {
                     color.a = MistlandsTransparencyAmount.Value;

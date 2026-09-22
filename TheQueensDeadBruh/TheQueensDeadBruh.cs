@@ -6,6 +6,7 @@ using BepInEx;
 using HarmonyLib;
 using JetBrains.Annotations;
 using Jotunn.Utils;
+using UnityEngine;
 using TheQueensDeadBruh.Configuration;
 using TheQueensDeadBruh.Features;
 using Vapok.Common.Abstractions;
@@ -25,7 +26,7 @@ namespace TheQueensDeadBruh
         //Module Constants
         private const string _pluginId = "vapok.mods.thequeensdeadbruh";
         private const string _displayName = "The Queens Dead Bruh!";
-        private const string _version = "2.0.7";
+        private const string _version = "2.0.8";
         
         //Interface Properties
         public string PluginId => _pluginId;
@@ -50,15 +51,21 @@ namespace TheQueensDeadBruh
         {
             //I'm awake!
             _instance = this;
+
+            //Register Logger
+            LogManager.Init(PluginId,out _log);
+
+            if (SystemInfo.graphicsDeviceType == UnityEngine.Rendering.GraphicsDeviceType.Null)
+            {
+                _log.Info("Headless dedicated server detected. TheQueensDeadBruh disabled.");
+                return;
+            }
             
             //Waiting For Startup
             Waiter = new Waiting();
             
             //Jotunn Localization
             var localization = Jotunn.Managers.LocalizationManager.Instance.GetLocalization();
-
-            //Register Logger
-            LogManager.Init(PluginId,out _log);
             
             //Initialize Managers
             Localizer.Init(localization);
