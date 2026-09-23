@@ -10,7 +10,7 @@
   * Added `[HarmonyPrepare]` on patch classes returning `!GUIManager.IsHeadless()`.
   * Enforced explicit typing across all patched routines.
 * **Library Updates**:
-  * Synchronized `Vapok.Valheim.Common` to `3.17.1015` (resolving [THEQUEENSDEADBRUH-3](https://vapok-gaming.sentry.io/issues/THEQUEENSDEADBRUH-3)).
+  * Synchronized `Vapok.Valheim.Common` to `3.19.1015` (resolving [THEQUEENSDEADBRUH-3](https://vapok-gaming.sentry.io/issues/THEQUEENSDEADBRUH-3)).
   * Synchronized `JotunnLib` to `2.30.2`.
 
 # 2.0.7 - Valheim 1.0.15 Alignment & Internalized Dependency Updates
