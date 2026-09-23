@@ -1,4 +1,5 @@
 # 2.0.8 - Performance Optimization, Dedicated Server Bypass & Stability
+* **Configuration Sync**: Resolved a library configuration synchronization issue.
 * **Performance Optimization**: Optimized mist rendering updates and cached boss defeat checks to eliminate frame rate drops.
 * **Dedicated Server Bypass**: Disabled visual mist adjustments on headless dedicated servers to save server performance.
 * **Dependency Updates**: Updated Jotunn to 2.30.2 and internal dependencies for stability.
