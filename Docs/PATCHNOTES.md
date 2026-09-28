@@ -1,3 +1,8 @@
+# 2.0.9 - Dependency Updates & Stability
+* **Library Updates**:
+  * Internalized `Vapok.Valheim.Common` 3.22.1016.
+  * Updated game assembly references to 1.0.16.
+
 # 2.0.8 - Performance Optimization, Dedicated Server Bypass & Stability
 * **Performance Optimization**:
   * In `DisableMistlandsMistComponent.cs`, implemented throttled caching for `IsQueenDead()` (2.0s check interval) instead of querying `ZoneSystem.instance.GetGlobalKey("defeated_queen")` every rendered frame.

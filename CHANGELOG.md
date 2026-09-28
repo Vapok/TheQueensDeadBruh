@@ -1,11 +1,14 @@
-# 2.0.8 - Performance Optimization, Dedicated Server Bypass & Stability
+# 2.0.9 - Dependency Updates & Stability
+* Updated internal dependencies for stability.
+
+<details>
+<summary><b>2.0 Changelog History (Valheim Release)</b> (<i>click to expand</i>)</summary>
+
+### 2.0.8 - Performance Optimization, Dedicated Server Bypass & Stability
 * **Configuration Sync**: Resolved a library configuration synchronization issue.
 * **Performance Optimization**: Optimized mist rendering updates and cached boss defeat checks to eliminate frame rate drops.
 * **Dedicated Server Bypass**: Disabled visual mist adjustments on headless dedicated servers to save server performance.
 * **Dependency Updates**: Updated Jotunn to 2.30.2 and internal dependencies for stability.
-
-<details>
-<summary><b>2.0 Changelog History (Valheim Release)</b> (<i>click to expand</i>)</summary>
 
 ### 2.0.7 - Valheim 1.0.15 Alignment & Internalized Dependency Updates
 * **Valheim 1.0.15 Alignment**: Updated game assembly references and internalized `Vapok.Valheim.Common` 3.13.1015.
