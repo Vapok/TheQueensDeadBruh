@@ -77,7 +77,6 @@ namespace TheQueensDeadBruh
             {
                 Tagline = "Disables Mistlands mist globally once the Queen boss has been defeated in the world.",
                 ShowOnStartup = ConfigRegistry.ShowSplashOnStartup,
-                EnableTelemetry = ConfigRegistry.EnableTelemetry,
             });
 
             Localizer.Waiter.StatusChanged += InitializeModule;
