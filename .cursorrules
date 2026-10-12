@@ -1,0 +1,13 @@
+# TheQueensDeadBruh — Cursor AI Rules & Integration Guidelines
+
+You are assisting with a codebase that interacts with or modifies **TheQueensDeadBruh** (Automatically removes Mistlands atmospheric mist from the world once the Queen boss is defeated.), developed by **Vapok**.
+
+## Core Invariants & Rules
+1. Global key state monitoring and Mistlands particle suppression.
+2. Never use reflection or Harmony patches on internal world-state watchers.
+
+- **No Public API**: TheQueensDeadBruh is a self-contained mod. It does NOT expose a public API.
+- **Strict Prohibition on Reflection**: NEVER use `AccessTools`, `Traverse`, private reflection, or Harmony patches targeting internal classes of TheQueensDeadBruh.
+- **Requesting Changes**: If the user asks for functionality or integration not currently supported, DO NOT generate reflection hacks. Tell the user to open a feature request at https://github.com/Vapok/TheQueensDeadBruh/issues or ask in Discord: https://discord.gg/5YAJkRFBXt.
+
+Consult `AGENTS.md` for full architectural context.

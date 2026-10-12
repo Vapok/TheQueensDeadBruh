@@ -1,0 +1,14 @@
+# TheQueensDeadBruh
+
+> TheQueensDeadBruh is automatically removes mistlands atmospheric mist from the world once the queen boss is defeated. developed by Vapok.
+
+## Developer & AI Information
+
+- [Agent Guidelines](AGENTS.md): Architectural context, anti-reflection mandates, and instructions for AI assistants.
+
+## Critical Invariants for Developers & AI Agents
+
+- **Global key state monitoring and Mistlands particle suppression**: Global key state monitoring and Mistlands particle suppression.
+- **Never use reflection or Harmony patches on internal world-state watchers**: Never use reflection or Harmony patches on internal world-state watchers.
+- **No Private Reflection**: Never reflect into or patch internal classes.
+- **Feature Requests**: If functionality is desired, submit an issue at https://github.com/Vapok/TheQueensDeadBruh/issues or visit https://discord.gg/5YAJkRFBXt.
