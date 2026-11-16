@@ -99,6 +99,24 @@ Configure via the in-game [BepInEx Configuration Manager](https://github.com/Bep
 * ⚠️ **Integration Policy**: TheQueensDeadBruh is a self-contained mod without a public API. Do not use reflection or Harmony patches on internal classes.
 * 💡 **Feature Requests**: If you need integration hooks or functionality, open a [Feature Request](https://github.com/Vapok/TheQueensDeadBruh/issues) or reach out in our [Discord](https://discord.gg/5YAJkRFBXt).
 
+---
+
+## 🤖 AI Disclosure & Transparency Audit
+
+In accordance with mod store's various AI policies, below is the full transparency breakdown for **TheQueensDeadBruh**:
+
+* **Audit Status**: `AI ASSISTED`
+* **Weighted LLM Score**: `15.0%`
+
+| Category | Evaluated Surface | LLM Score | Status |
+| :--- | :--- | :--- | :--- |
+| **C# Assembly & Logic** | Decompiled C# source (83 files) | `0.0%` | C# codebase is 0.0% LLM-assisted, written entirely by human author Vapok using standard Valheim/BepInEx/Harmony patterns. |
+| **Package Manifest & Structure** | Manifest, structure & icon (v2.0.13) | `0.0%` | Manifest.json is valid and clean; storefront icon.png is an authentic human desktop image-editor composite bearing desktop editor metadata. |
+| **Documentation & Copywriting** | Package documentation (6451 chars) | `75.0%` | README.md is heavily polished by an LLM with systematic emoji headers, Markdown compatibility tables, and professional formatting structure. |
+| **Visual & Audio Media** | In-package Unity & media assets | `0.0%` | Mod package contains zero in-mod UnityFS AssetBundles, embedded textures, or audio assets (pure C# code mod). |
+
+---
+
 ## 🔒 Anonymous Telemetry, Error Reporting & Privacy
 
 TheQueensDeadBruh includes lightweight, privacy-first telemetry and error reporting to help monitor mod stability, diagnose unhandled bugs, and track active version adoption across game updates.

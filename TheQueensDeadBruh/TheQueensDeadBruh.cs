@@ -21,12 +21,12 @@ namespace TheQueensDeadBruh
     [BepInDependency("com.ValheimModding.YamlDotNetDetector")]
     [BepInPlugin(_pluginId, _displayName, _version)]
     [SynchronizationMode(AdminOnlyStrictness.IfOnServer)]
-    public class TheQueensDeadBruh : BaseUnityPlugin, IPluginInfo
+    public class TheQueensDeadBruh : VapokModBase, IPluginInfo
     {
         //Module Constants
         private const string _pluginId = "vapok.mods.thequeensdeadbruh";
         private const string _displayName = "The Queens Dead Bruh!";
-        private const string _version = "2.0.12";
+        private const string _version = "2.0.13";
         
         //Interface Properties
         public string PluginId => _pluginId;
